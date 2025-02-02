@@ -25,5 +25,5 @@ rule MAL_WIN_AsyncRAT_Stealer_PE
         not pe.is_signed and
         pe.version_info["OriginalFilename"] == "Stub.exe" and
         filesize < 180KB and 
-        9 of ($s*)
+        11 of ($s*)
 }
