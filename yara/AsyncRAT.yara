@@ -11,7 +11,7 @@ rule MAL_WIN_AsyncRAT_Stealer_PE
         $s1 = "Select * from AntivirusProduct" wide // Gathering information about antivirus
         $s2 = "/c taskkill.exe /im chrome.exe /f" wide // Forcefully terminate instances of google chrome that are running
         $s3 = "AVRemoval.Class1" wide // function that likely attempts to remove any antivirus
-        $s4 = "isDebuggerPresent"
+        $s4 = "isDebuggerPresent" //Checking for a debugger
         $s5 = "ABRIL.exe"
         $s6 = "/c schtasks /create /f /sc onlogon /rl highest /tn \"" wide// forces the creation of a scheduled task with elevated privs
         $s7 = "LimeLogger" // Appears to be a keylogger: https://github.com/NYAN-x-CAT/LimeLogger
