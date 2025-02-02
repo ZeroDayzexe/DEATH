@@ -18,6 +18,8 @@ rule MAL_WIN_AsyncRAT_Stealer_PE
         $s8 = "\\nuR\\noisreVtnerruC\\swodniW\\tfosorciM\\erawtfoS" wide // Apears to be an attempt to obfuscate activity
         $s9 = "\\extensions\\webextension@metamask.io.xpi" wide
         $s10 = "\\Log.tmp" wide
+        $s11 = "Tokens" wide
+        $s12 = "Wallets" wide
 
     condition:
         not pe.is_signed and
