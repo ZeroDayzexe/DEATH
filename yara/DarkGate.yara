@@ -13,7 +13,7 @@ rule MAL_WIN_DarkGate_TROJ
         $s3 = "wldp.dll"
         $s4 = /C:\\Windows\\system32\\cryptbase\.SystemFunction[0-9]{3}/
         $s5 = "cryptbase_meow\\x64\\Release\\cryptbase.pdb"
-        $s6 = "cryptbase.dll"
+        $s6 = "cryptbase.dll" //Malicious DLL
         $s7 = "WinHttpOpenRequest"
         $s8 = "Virtual Machine Detected" // Likely checking to see if being analyzed in a VM
     condition:
