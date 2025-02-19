@@ -10,7 +10,7 @@ rule MAL_WIN_Qbot_Trojan_PE
     strings:
         $s1 = "WinSta0" // Interactive window station
         $s2 = "GetClipboardData"
-        $s3 = "TrackMouseEvent" //Possibly tracking activity when interacting with different windiws
+        $s3 = "TrackMouseEvent" //Possibly tracking activity when interacting with different windows
         $s4 = "Tdk_screen_broadcast_client_message" 
         $s5 = "Tdk_screen_get_root_window"
         $s6 = "gdk_screen_get_toplevel_windows"
